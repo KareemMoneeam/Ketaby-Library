@@ -1,0 +1,30 @@
+{% load static %}
+{% block Content %}
+<!DOCTYPE html>
+<html>
+<head>
+<div class = "pgsign" >
+	<meta charset="utf-8">
+	<title>log in</title>
+	<link rel="stylesheet"  href="{% static 'Style.css'%}">
+</head>
+<style type="text/css">
+	
+
+</style>
+
+
+<body>
+<p id ="heads" > <u>login</u> </p>
+
+<form class="site-form" action="/login/" method="post">
+   {% csrf_token %}
+  <label id ="username" for="id_username">Username:</label><input type="text" name="username" autofocus="" autocapitalize="none" autocomplete="username" maxlength="150" required="" id="id_username">
+<br><br>
+<label id ="username" for="id_password">Password:</label><input type="password" name="password" autocomplete="current-password" required="" id="id_password">
+<br><br><input id ="loginbtn" type="submit" value="Login">
+</form>
+</body>
+</div>
+</html>
+{% endblock %}

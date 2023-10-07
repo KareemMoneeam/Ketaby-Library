@@ -1,0 +1,18 @@
+{% load static %}
+<nav class="manu">
+	<div id="logo">
+		<img class="logo" src="{% static 'log.jpg'%}">
+	</div>
+	<ul>
+		<li><a class="manu-item"  href="https://www.researchs.com.ng/">Research</a></li>
+		<li><a class="manu-item"  href="/profile">Profile</a></li>
+		<li><a class="manu-item"  href="#Contact">Contacts</a></li>
+		<li><a class="manu-item"  href="/Information">About</a></li>
+		<li><a class="manu-item"  href="/index">Home</a></li>
+		<li><form class="manu-item" action = "/logout/" method="post"> 
+		  {% csrf_token %}
+		  <button id ="logout" type = "submit" >Logout</button>
+		
+		</form></li>
+	</ul>
+</nav>	

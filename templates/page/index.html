@@ -1,0 +1,136 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'Style.css'%}">
+<div class="home">
+<div class="tex1">
+	<p > University Library</p>
+	
+</div>
+
+<div class="tex2 ">
+<br><br><br><br><br><br><br>
+
+
+<div class="anim">
+	<span class="tex3">Welcome in </span>
+	<span class="tex4">Our Library</span>
+	
+</div>
+<br>
+	<br>
+<br>
+	<br>
+	<br>
+	<br>
+<div class="Box">
+	<br>
+	<br>
+
+
+
+	<form method="GET" action ="/Collection/" class="form-inline">
+ 
+        <input class="form-control" name="search_name" type="search" placeholder="Search for book" aria-label="Search">
+          <br>
+	    <div class="input-group-append">
+          <button class="btn" type="submit" value="search">>
+           
+          </button>
+        </div>
+      </div>
+    </form>
+	
+</div>
+<br><br><br><br>
+<div class="tex5">
+	<img class="imag3" src="{%static '36.jpg' %}">
+	<h2 class="tex-">DATA BASE</h2>
+	<p class="tex--" >
+          Databases are selected upon faculty recommendations and are reviewed annually by librarians and faculty liaisons. Database use is subject to copyright laws as well as provider terms and conditions.</p>
+	
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="tex6">
+ <img class="imag5" src="{% static '391.jpg' %}">
+	
+</div>
+<br><br><br><br><br>
+
+	<div class="text4">
+	<img class="imag2" src="{% static 'landingLogo.png' %}">
+	<h1 class="text41">Egyptian Knowledge Bank</h1>
+	<p class="text41">This platform provides all Egyptian citizens and non-Egyptian  and students with free online access to quality research and  educational resources (eBooks, databases, periodicals and media.</p>
+	<button class="bott"><span></span><a href="https://www.ekb.eg/ar/home">Here</a>
+	</div>
+<br><br><br><br>
+
+   <div class="text5">
+	<img class="imag2" src="{% static '38.jpg' %}">
+	<h1 class="text41">Competitions</h1>
+	<p>.</p>
+	<button class="bott"><span></span><a href="https://www.tcyonline.com/tests/reading-competition">Here</a>
+   </div>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<div class="text7">
+	<img class="imag2" src="{% static '12.jpg' %}">
+	<h1 class="text41">EXPLORE OUR COLLECTIONS</h1>
+	<br><br>
+	<button class="bott"><span></span><a href="/Collection">Here</a>
+   </div>
+   <br>
+<br> <br> <br> <br>
+
+<div class="text5">
+	<img class="imag2" src="{% static '26.jpg' %}">
+	<h1 class="text41">Join Us</h1>
+	<br> <br> 
+		<div>
+	<button id="sign"><span></span><a href="/signup/">Sign up</a>
+		
+	</button>
+	<button id="login"><span></span><a href="/login/">login</a>
+	</button>
+
+
+</div>
+   </div>
+   
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="LastText">
+		<nav class="manu">
+	<div id="logo">
+		<img class="logo" src="{% static 'log.jpg'%}">
+		
+	</div>
+	<ul>
+		<li><a class="manu-item"  href="#">Research</a></li>
+		<li><a class="manu-item"  href="#">Profile</a></li>
+		<li><a class="manu-item"  href="#">Contacts</a></li>
+		<li><a class="manu-item"  href="#">About</a></li>
+		<li><a class="manu-item"  href="#">Home</a></li>
+	</ul>
+</nav>
+<br>
+<br>
+<br>
+
+<p >
+	<h3 id="Contact" class="text3">Connect with us: +020102556385</h3>
+</p>
+<br><br><br><br>
+<div class="box2">
+	
+</div>
+
+</div>
+</div>
+
+</div>
+
+{%endblock content%}

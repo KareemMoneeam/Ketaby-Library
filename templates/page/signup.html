@@ -1,0 +1,36 @@
+{% load static %}
+{% block Content %}
+<!DOCTYPE html>
+<html>
+<head>
+<div class = "pgsign" >
+
+
+	<meta charset="utf-8">
+	<title>Signup</title>
+	<link rel="stylesheet"  href="{% static 'Style.css'%}">
+</head>
+<style type="text/css">
+	
+
+</style>
+
+</style>
+<body>
+<div class = "booksign">
+<p id ="heads" > <u>Signup</u> </p>
+<div class = "signcontent">
+<form class="site-form" action="/signup/" method="post">
+  {% csrf_token %}
+  <label for="id_username">Username:</label><input type="text" name="username" maxlength="150" autocapitalize="none" autocomplete="username" autofocus="" required="" id="id_username"><br><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span>
+<label for="id_password1">Password:</label><br><br><input type="password" name="password1" autocomplete="new-password" required="" id="id_password1"><br><span class="helptext"><ul><li>Your password can’t be too similar to your other personal information.</li><li>Your password must contain at least 8 characters.</li><li>Your password can’t be a commonly used password.</li><li>Your password can’t be entirely numeric.</li></ul></span>
+<label for="id_password2">Password confirmation:</label><input type="password" name="password2" autocomplete="new-password" required="" id="id_password2"><br><span class="helptext">Enter the same password as before, for verification.</span>
+<input id ="signbtn" type="submit" value="Signup">
+</form>
+
+</div>
+</div>
+</body>
+</div>
+</html>
+{% endblock %}
